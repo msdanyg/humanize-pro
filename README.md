@@ -44,11 +44,20 @@ Claude Agent SDK: point `skills` at a directory containing this folder.
 
 ## Use
 
-Say "humanize this", "unslop this", or "this sounds like ChatGPT", or just draft in a channel the skill covers. Three modes:
+Say "humanize this", "unslop this", or "this sounds like ChatGPT", or just draft in a channel the skill covers. Four modes:
 
 - **Rewrite**: paste text, get the fixed version back, nothing else.
 - **Draft**: give raw notes, get a clean first version shaped for the channel.
 - **Audit**: "audit this for AI tells" returns a numbered list of what would flag, with a fix for each, and no rewrite.
+- **Profile**: "build my voice profile" reads your samples and past corrections and writes a one-page file the skill loads on every future run.
+
+## Voice profiles
+
+Stripping AI tells gets you clean text. It does not get you *your* text. A voice profile is a one-page versioned file describing how one specific person writes: their standing constraints, register, sentence shape, vocabulary, and how the voice shifts by channel. When present, it outranks every style rule in this skill.
+
+The profile is meant to be maintained, not written once. Every edit you make to a draft is a labeled example, so the skill classifies the change, writes the rule in your words, and logs it with the date and trigger. Two guards keep the file honest: a provisional rule needs three independent instances before it hardens, and no rule may enter that suppresses disagreement or an unwelcome finding. See [references/voice-profile-template.md](references/voice-profile-template.md).
+
+Profiles are personal, so this repo ships the template rather than any real one. Keep yours at `references/voice-profile.md` in a private fork, in persistent memory, or anywhere you can point the skill at.
 
 ## What it will not do
 

@@ -41,6 +41,7 @@ Also flag: significance inflation ("marking a turning point in the evolution of"
 | Negative parallelism | "It's not just a tool, it's a platform." | State what it is. |
 | Contrastive reframe | "This isn't about speed. It's about trust." | Pick one and say it. |
 | Tailing negation | "Fast setup, no configuration needed." | "Setup takes two minutes." |
+| Strawman negation | "We chose Postgres, not because it's trendy." | Cut, unless the reader really would have assumed the alternative. See below. |
 | Copula avoidance | "serves as / stands as / boasts / features" | is, has |
 | Superficial -ing analysis | "reflecting a broader shift, highlighting the need for" | Cut, or make it a claim with a source. |
 | Synonym cycling | protagonist, then main character, then central figure | Repeat the clearest term. |
@@ -48,8 +49,46 @@ Also flag: significance inflation ("marking a turning point in the evolution of"
 | Aphorism formula | "Trust is the currency of teams." | Say the concrete claim instead. |
 | Manufactured staccato | "No meetings. No decks. No excuses." | Vary length, make one real claim. |
 | Rhetorical fake-candor | "Honestly? It depends." | Answer. |
+| Credentialed honesty | "Not the LinkedIn answer. The honest one." | Give the answer. Honest writing does not announce itself. |
+| Hidden-depth title | "The metric, and the trap sitting inside it" | Name the trap in the title. |
 | Hedge stack | "may potentially be able to help" | "may help" |
 | Filler | "in order to", "due to the fact that", "the fact that" | to, because, that |
+
+### Credentialed honesty
+
+Flagging a statement as the honest one implies the surrounding statements were not. It is a claim about the writer rather than about the subject, and it costs the reader a beat to process before any content arrives.
+
+Forms: "the honest answer", "real talk", "I'll be blunt", "let me be candid", "not the polite version", "not the LinkedIn answer", "here's what nobody will tell you". Fix by deleting the frame and delivering the content. If the content is not actually candid, the frame was doing the work and the sentence has nothing in it.
+
+Watch for the stacked case. "Not the LinkedIn answer. The honest one." runs three tells in seven words: credentialed honesty, strawman negation (nobody offered a LinkedIn answer), and contrastive reframe in fragment form. Stacked tells like this are usually a whole passage to cut rather than a line to repair.
+
+### Titles and headings
+
+The tell is a title that promises a payload instead of naming one.
+
+**Comma-and appendix.** "The metric, and the trap sitting inside it." "The launch, and what it cost us." "The framework, and why it fails." The second half advertises a complication without stating it. Test: after reading the title, can the reader say what the complication is? If not, it is a teaser.
+
+**Concealment metaphor.** Sitting inside it, lurking beneath, hiding in plain sight, the part nobody talks about, what's really going on. These signal depth rather than delivering it.
+
+**Colon abstraction.** "Positioning: a deeper look." "AI adoption: beyond the hype."
+
+Fix: state the claim. "Activation rate rewards the wrong onboarding" beats "The metric, and the trap sitting inside it." Sentence case, no title case.
+
+One exception. Editorial and newsletter headlines legitimately trade some specificity for pull, and a house style may require a hook. When a channel demands it, keep the hook and make the second half concrete rather than metaphorical.
+
+### Redundant negation, in detail
+
+Three of the rows above belong to one family: a clause is asserted, then a negative twin is bolted on. They are not equally bad, and the last one is sometimes correct.
+
+**Negated synonym.** The second clause restates the first with a minus sign. "To fit in and not feel excluded." "Affordable, without being expensive." "Clear and not confusing." Information content is zero. Always cut. This is the most common of the three and the easiest to miss, because each half reads fine on its own.
+
+**Tailing negation.** A feature followed by the absence it implies. "Fast setup, no configuration needed." Cut the tail and make the first half concrete.
+
+**Strawman negation.** An alternative is ruled out that nobody was considering. "We chose Postgres, not because it's trendy." "This is a strategy problem, not a tooling problem" when no one raised tooling.
+
+The deletion test, applied to any of them: remove the negative clause and ask whether a reasonable reader now assumes something false. If yes, the clause is load-bearing and stays. If they assume nothing different, it was decoration.
+
+Strawman negation is the one that passes the test often enough to matter. "I left due to layoffs, not performance" on a resume gap is doing real work, because the reader's default assumption is the thing being ruled out. Do not strip these mechanically. The tell is inventing an objection so you can defeat it, not answering one the reader already has.
 
 ## 4. Structural patterns
 
@@ -74,6 +113,7 @@ Also flag: significance inflation ("marking a turning point in the evolution of"
 
 - Bold on scattered nouns and phrases inside body copy. Cut.
 - "**Label:** sentence" bullet blocks where prose works. Convert.
+- Prose disguised as a list: bullets that are full sentences. Two tests. If the bullets only make sense read in order, it is an argument and belongs in prose. If a bullet runs past roughly fifteen words, or carries a subordinate clause, it is a sentence that lost its paragraph. Compress to parallel fragments, or convert the block to prose. Reasoning goes in paragraphs; bullets are for scannable, parallel items.
 - Title Case Headings. Use sentence case.
 - Emoji as bullets or section markers. Cut, unless the channel norm allows.
 - Markdown in a surface that does not render it: LinkedIn, X, plain-text email, Slack headers.
@@ -109,6 +149,11 @@ These are worse than style tells because they survive editing.
 **Negative parallelism plus triad**
 - Before: "It's not just about efficiency, it's about clarity, alignment, and momentum."
 - After: "It cut the review cycle from nine days to three."
+
+**Negated synonym**
+- Before: "The onboarding is designed to help new hires fit in and not feel excluded."
+- After: "New hires get a named buddy in week one."
+- Note: "and not feel excluded" restates "fit in" with a minus sign. Deleting it changes nothing a reader assumes.
 
 **Corporate hedge stack**
 - Before: "We believe this may potentially represent a significant opportunity going forward."
