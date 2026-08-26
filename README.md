@@ -8,7 +8,16 @@ Make AI-drafted text read like a person wrote it, for the channel it ships in.
 
 humanize-pro is a skill for Claude, Claude Code, and the Claude Agent SDK. It removes the tells that make writing read as AI-generated (the em dashes, the rule of three, "delve" and "seamless" and "testament to", the tidy summary ending) and then reshapes the result for where it will actually be read: LinkedIn, X, cold email, internal email, exec memos, Slack, blogs, landing pages, help docs, press.
 
-That second pass is the point. Most humanizer prompts stop after stripping vocabulary, which produces clean prose that still lands wrong, because a LinkedIn post is not a memo and a Slack reply is not an essay.
+## Why this over other humanizer skills
+
+Most humanizers on the marketplace are a banned-word list: cut "delve", swap out the em dashes, return the text. That gets you clean prose that still lands wrong and sounds like nobody. This skill treats the word list as step one of four:
+
+1. **De-AI pass.** The full tell catalog: vocabulary, constructions, punctuation, formatting, structure. Documented as a frequency heuristic rather than a blocklist, so a listed word survives when it is the plain, precise choice.
+2. **Channel fit.** Per-channel specs for length, structure, opening convention, formatting, and sign-off across LinkedIn, X, cold and internal email, exec memos, Slack, blogs, landing pages, docs, and press. A stripped-clean Slack reply that reads like an essay still fails.
+3. **Your voice.** A versioned one-page profile built from your own writing and updated from every edit you make to a draft, with confidence markers on each rule and guards against overfitting and sycophantic drift. When present, it outranks the skill's own style rules.
+4. **A two-gate audit before delivery.** First a literal scan of every output, generated files included, against your standing constraints and the tell list. Then a cold read: would a reader assume a model wrote this? Fix and rescan until the answer is no.
+
+Under all four sits an absolute no-fabrication rule: the skill never invents a statistic, a customer, a quote, or an anecdote to make text feel human. A humanizer that manufactures specifics is a liability, not a feature.
 
 ## Before and after
 
