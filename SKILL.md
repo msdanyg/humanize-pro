@@ -13,7 +13,7 @@ description: >-
   regulated text, or SEO structural elements (title tags, meta descriptions,
   keywords) unless the user explicitly asks to humanize those.
 metadata:
-  version: 1.4.0
+  version: 1.4.1
 ---
 
 # Humanize Pro
@@ -21,6 +21,22 @@ metadata:
 Two jobs, in this order: remove the statistical residue of a language model, then make the text fit the channel it ships in. Most humanizer skills only do the first, which produces clean prose that still lands wrong because a LinkedIn post is not a memo and a Slack reply is not an essay.
 
 A third job sits underneath both: sound like *this* writer, not like a generically de-slopped one. That is what the voice profile is for.
+
+## When to trigger
+
+Use this skill when:
+
+- The user asks to humanize, unslop, de-slop, de-AI, clean up, or tighten text, or to make it sound human or natural.
+- The user says something reads like AI or like ChatGPT.
+- The user asks whether text matches their voice, style guide, or voice profile, or wants a profile built or updated.
+- You are drafting or rewriting outbound human communication, even if nobody said "humanize": LinkedIn, X, cold or warm email, internal email, exec memo, Slack, blog, landing page, help content, press or public statements.
+- Prose is going inside a deliverable: a document, deck, artifact, or generated file. The rules apply to the payload, not only the chat reply.
+
+Do not trigger for:
+
+- Code, commit messages, PR descriptions, or changelogs.
+- Legal or regulated text.
+- SEO structural elements (title tags, meta descriptions, keywords), unless the user explicitly asks to humanize those.
 
 ## Modes
 
