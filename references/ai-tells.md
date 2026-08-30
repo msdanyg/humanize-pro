@@ -30,7 +30,9 @@ Also flag: significance inflation ("marking a turning point in the evolution of"
 
 **Connectives on repeat**: Moreover, Furthermore, Additionally, Consequently, Notably, Importantly, That said, Ultimately, In conclusion.
 
-**Closers to delete**: I hope this helps. Let me know if you have any questions. Feel free to reach out. The future looks bright. Only time will tell. One thing is clear. At the end of the day. In summary (when the piece is short enough not to need one).
+**Closers to delete**: I hope this helps. Let me know if you have any questions. Feel free to reach out. The future looks bright. Only time will tell. One thing is clear. At the end of the day. In summary (when the piece is short enough not to need one). The punchy fragment kicker: a short declarative beat-drop as the final line ("That's the whole game." "It compounds." "That's the job."). The callback closer that echoes the opening line to manufacture closure. One kicker in a piece can land; the tell is that every piece ends on one.
+
+**Discourse templates**: stock phrases for managing the argument rather than making it. The former / the latter (repeat the noun instead). The quantified residual: "gets you 80% of the way there", "the last 20%", "the remaining gap", "the final mile", "closes the gap", "the delta between X and Y". The tiered answer: "The short answer is yes. The longer answer is..." The paper-practice pivot: "On paper, X. In practice, Y." The news split: "That's the good news. The bad news is..." "This works until it doesn't." Each of these is fine once in a long piece and a tell on repeat; most of the time the fix is to say the underlying thing directly.
 
 **Vague attributions**: experts say, studies show, research suggests, many believe, it is widely regarded, industry leaders agree. Name the source, or cut the claim.
 
@@ -53,6 +55,12 @@ Also flag: significance inflation ("marking a turning point in the evolution of"
 | Hidden-depth title | "The metric, and the trap sitting inside it" | Name the trap in the title. |
 | Hedge stack | "may potentially be able to help" | "may help" |
 | Filler | "in order to", "due to the fact that", "the fact that" | to, because, that |
+| Former/latter reference | "the former is faster, the latter cheaper" | Repeat the nouns. |
+| Quantified residual | "Gets you 80% of the way. The last 20% is the hard part." | Name what is actually missing. See below. |
+| Tiered answer | "The short answer is yes. The longer answer is..." | Give the answer once. |
+| Paper-practice pivot | "On paper it scales. In practice, it doesn't." | State what actually happens, with the evidence. |
+| Concession pivot | "To be fair, the docs are thorough. But nobody reads them." | Keep only if the concession is real; otherwise cut the first half. |
+| Fragment kicker | "That's the whole game." as the closing line | End where the content ends. |
 
 ### Credentialed honesty
 
@@ -89,6 +97,14 @@ Three of the rows above belong to one family: a clause is asserted, then a negat
 The deletion test, applied to any of them: remove the negative clause and ask whether a reasonable reader now assumes something false. If yes, the clause is load-bearing and stays. If they assume nothing different, it was decoration.
 
 Strawman negation is the one that passes the test often enough to matter. "I left due to layoffs, not performance" on a resume gap is doing real work, because the reader's default assumption is the thing being ruled out. Do not strip these mechanically. The tell is inventing an objection so you can defeat it, not answering one the reader already has.
+
+### The quantified residual
+
+The model frames nearly any comparison, migration, or maturity assessment as near-completeness plus a meaningful remainder: "gets you 80% of the way there", "the last 20% is where the real work is", "the remaining gap", "the final mile", "closing the gap". The percentage is almost never measured; it is a rhetorical shape borrowed from the 80/20 rule and applied to things nobody quantified.
+
+Two problems. The fake number violates the no-fabrication instinct even when it reads as figurative, and the frame hides the actual content: what specifically is missing, and how hard is it?
+
+Fix: replace the ratio with the inventory. "The importer handles CSV and JSON; XML mapping and retry logic are still open" beats "the tooling gets you 80% of the way there." If the source genuinely measured a proportion, keep it, with its source.
 
 ## 4. Structural patterns
 
