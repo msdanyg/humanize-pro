@@ -13,7 +13,7 @@ description: >-
   regulated text, or SEO structural elements (title tags, meta descriptions,
   keywords) unless the user explicitly asks to humanize those.
 metadata:
-  version: 1.4.3
+  version: 1.5.0
 ---
 
 # Humanize Pro

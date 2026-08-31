@@ -41,15 +41,24 @@ Under all four sits an absolute no-fabrication rule: the skill never invents a s
 
 ## Install
 
-Claude Code:
+**Claude Code** (recommended; this path gets updates):
 
 ```
-git clone https://github.com/msdanyg/humanize-pro ~/.claude/skills/humanize-pro
+/plugin marketplace add msdanyg/humanize-pro
+/plugin install humanize-pro@humanize-pro
 ```
 
-Claude.ai: zip this folder, rename the archive to `humanize-pro.skill`, and upload it under Settings → Capabilities → Skills.
+Updates ship as version bumps to this repo. To receive them automatically, open `/plugin`, go to the Marketplaces tab, and enable auto-update for `humanize-pro`. Without auto-update, run `/plugin marketplace update humanize-pro` whenever you want the latest.
 
-Claude Agent SDK: point `skills` at a directory containing this folder.
+**Upgrading from a manual copy** (pre-1.5.0 installs): delete the old copy first so two versions of the skill don't both load, then install via the marketplace above.
+
+```
+rm -rf ~/.claude/skills/humanize-pro
+```
+
+**Claude.ai**: zip the `skills/humanize-pro` folder, rename the archive to `humanize-pro.skill`, and upload it under Settings → Capabilities → Skills. Claude.ai has no update channel, so re-upload when a new version ships.
+
+**Claude Agent SDK**: point `skills` at a directory containing `skills/humanize-pro`.
 
 ## Use
 
@@ -64,9 +73,9 @@ Say "humanize this", "unslop this", or "this sounds like ChatGPT", or just draft
 
 Stripping AI tells gets you clean text. It does not get you *your* text. A voice profile is a one-page versioned file describing how one specific person writes: their standing constraints, register, sentence shape, vocabulary, and how the voice shifts by channel. When present, it outranks every style rule in this skill.
 
-The profile is meant to be maintained, not written once. Every edit you make to a draft is a labeled example, so the skill classifies the change, writes the rule in your words, and logs it with the date and trigger. Two guards keep the file honest: a provisional rule needs three independent instances before it hardens, and no rule may enter that suppresses disagreement or an unwelcome finding. See [references/voice-profile-template.md](references/voice-profile-template.md).
+The profile is meant to be maintained, not written once. Every edit you make to a draft is a labeled example, so the skill classifies the change, writes the rule in your words, and logs it with the date and trigger. Two guards keep the file honest: a provisional rule needs three independent instances before it hardens, and no rule may enter that suppresses disagreement or an unwelcome finding. See [the voice profile template](skills/humanize-pro/references/voice-profile-template.md).
 
-Profiles are personal, so this repo ships the template rather than any real one. Keep yours at `references/voice-profile.md` in a private fork, in persistent memory, or anywhere you can point the skill at.
+Profiles are personal, so this repo ships the template rather than any real one. Keep yours at `skills/humanize-pro/references/voice-profile.md` in a private fork, in persistent memory, or anywhere you can point the skill at.
 
 ## What it will not do
 
@@ -77,7 +86,7 @@ Profiles are personal, so this repo ships the template rather than any real one.
 ## FAQ
 
 **Why does my writing sound like ChatGPT?**
-Language models over-produce specific patterns: uniform paragraph rhythm, three of everything, em-dash clause breaks, words like "delve" and "robust" and "landscape", a summary paragraph that restates the piece. Readers pattern-match on these fast. [references/ai-tells.md](references/ai-tells.md) catalogs them with fixes.
+Language models over-produce specific patterns: uniform paragraph rhythm, three of everything, em-dash clause breaks, words like "delve" and "robust" and "landscape", a summary paragraph that restates the piece. Readers pattern-match on these fast. [ai-tells.md](skills/humanize-pro/references/ai-tells.md) catalogs them with fixes.
 
 **Does this bypass AI detectors?**
 Not the goal. Detectors are unreliable in both directions, and gaming them is a treadmill. This skill optimizes for the only detector that matters: a human reader deciding whether you wrote it. Text that passes that test tends to score better everywhere, but write for readers, not scanners.
@@ -90,7 +99,7 @@ A moving target, which is why the vocabulary list is documented as a frequency h
 
 ## Contributing
 
-The highest-value PRs are new channel specs (decks, SMS, forum replies, YouTube descriptions) in the format of [references/channels.md](references/channels.md), and new tells with before/after pairs for [references/ai-tells.md](references/ai-tells.md). One rule: examples must be real patterns you have seen, not invented ones. The skill has a no-fabrication rule and so does the repo.
+The highest-value PRs are new channel specs (decks, SMS, forum replies, YouTube descriptions) in the format of [channels.md](skills/humanize-pro/references/channels.md), and new tells with before/after pairs for [ai-tells.md](skills/humanize-pro/references/ai-tells.md). One rule: examples must be real patterns you have seen, not invented ones. The skill has a no-fabrication rule and so does the repo.
 
 ## Lineage
 
