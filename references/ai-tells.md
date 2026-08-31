@@ -119,7 +119,7 @@ Fix: replace the ratio with the inventory. "The importer handles CSV and JSON; X
 
 ## 5. Punctuation
 
-- **Em dash as clause separator**: cut. Use a period, comma, colon, or parentheses. This is the single most recognized tell. Exceptions: the user's own voice sample uses them; en dashes in numeric ranges (pages 3–5, 2019–2024, a 2–1 vote) are correct typography and stay.
+- **Em dash**: hard ban, every use. Not as a clause separator, not as a parenthetical pair, not before an attribution. Use a period, comma, colon, or parentheses. This is the single most recognized tell, and a voice sample that uses them does not restore them; only an explicit user instruction does. En dashes in numeric ranges (pages 3–5, 2019–2024, a 2–1 vote) are a different character, correct typography, and stay.
 - **Curly quotes and apostrophes**: convert to straight, unless the destination is a typeset page.
 - **Exclamation points**: at most one, only if the enthusiasm is real.
 - **Ellipsis for suspense**: cut.

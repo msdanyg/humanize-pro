@@ -13,7 +13,7 @@ description: >-
   regulated text, or SEO structural elements (title tags, meta descriptions,
   keywords) unless the user explicitly asks to humanize those.
 metadata:
-  version: 1.4.2
+  version: 1.4.3
 ---
 
 # Humanize Pro
@@ -142,7 +142,7 @@ Then load the matching section of `references/channels.md`. Load only what appli
 
 ### 2. Calibrate voice
 
-Load the voice profile if one exists. Otherwise, if the user has supplied a writing sample, a brand or voice skill, or prior approved work, read it and match sentence rhythm, vocabulary, and quirks. **A voice profile or sample outranks every style rule in this skill except the no-fabrication rule and the user's standing constraints.** If their real writing uses em dashes, keep them. If it uses one-line paragraphs, keep them.
+Load the voice profile if one exists. Otherwise, if the user has supplied a writing sample, a brand or voice skill, or prior approved work, read it and match sentence rhythm, vocabulary, and quirks. **A voice profile or sample outranks every style rule in this skill except the no-fabrication rule, the em dash ban, and the user's standing constraints.** If it uses one-line paragraphs, keep them. If it uses em dashes, the ban still holds: only an explicit user instruction restores them, never an inference from samples.
 
 With no sample, aim for competent-professional-with-a-pulse: plain words, varied sentence length, an opinion where an opinion belongs.
 
@@ -156,7 +156,7 @@ The checklist below covers most short texts. For long-form work (blog, memo, lan
 4. **Kill the vocabulary.** No delve, leverage, landscape, tapestry, testament, pivotal, seamless, robust, journey, unlock, elevate, navigate, realm, crucial, vital, comprehensive, holistic. See the full list in references. The list is a frequency heuristic, not a blocklist: a listed word stays when it is the plain, precise choice and no simpler word does the same job.
 5. **Kill the constructions.** No "It's not just X, it's Y." No "This isn't about A. It's about B." No copula avoidance (serves as, stands as, boasts, features). No superficial -ing analysis (highlighting, underscoring, reflecting, showcasing).
 6. **Kill redundant negation.** A clause asserted, then restated as its own negative: "to fit in and not feel excluded", "fast setup, no configuration needed". Delete the negative half. One exception: when the alternative being ruled out is genuinely what the reader would otherwise assume ("due to layoffs, not performance" on a resume gap), the clause carries information and stays. Apply the deletion test in `references/ai-tells.md`. Do not strip these mechanically.
-7. **Kill the punctuation tells.** No em dashes as clause separators: use periods, commas, colons, parentheses. En dashes in numeric ranges (pages 3–5, 2019–2024) are correct typography and stay unless a standing constraint says otherwise. No curly quotes outside typeset surfaces. No ellipsis for drama.
+7. **Kill the punctuation tells.** No em dashes. Hard rule, every use: not as a clause separator, not as a parenthetical pair, not before an attribution. Use periods, commas, colons, parentheses. A voice sample does not override this; only an explicit user instruction does. En dashes in numeric ranges (pages 3–5, 2019–2024) are a different character, correct typography, and stay unless a standing constraint says otherwise. No curly quotes outside typeset surfaces. No ellipsis for drama.
 8. **Kill formatting slop.** No bold on random nouns. No "**Label:** sentence" bullets when prose works. No title case headings. No emoji unless the channel norm says otherwise. No markdown in a channel that does not render it.
 9. **Fix bullets that are sentences.** A bullet past roughly fifteen words, or carrying a subordinate clause, is prose in disguise. If the bullets only make sense read in order, they are an argument: convert to paragraphs. Otherwise compress to parallel fragments.
 10. **Cut announced honesty.** No "the honest answer", "real talk", "I'll be blunt", "not the polite version". Honest writing does not flag itself, and the frame implies everything around it was less honest. Deliver the content instead.
@@ -186,7 +186,7 @@ Two gates, in order. The first is mechanical and has no judgment in it.
 **Gate A, literal scan.** Scan the actual characters of every output produced this turn, files included:
 
 - Each standing constraint from the voice profile.
-- The em dash used as a clause separator.
+- Any em dash character, in any use. (En dashes in numeric ranges pass.)
 - Banned vocabulary from step 3.
 - The constructions from step 5, and redundant negation from step 6.
 - Bullets over roughly fifteen words. Announced honesty. Titles that promise instead of name.

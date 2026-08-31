@@ -72,7 +72,7 @@ Profiles are personal, so this repo ships the template rather than any real one.
 
 - **Invent facts.** Specifics come from your input. A missing number, name, or anecdote is flagged as a gap, never filled. This rule outranks every style rule in the skill.
 - **Break your requirements.** Legal language, brand guidelines, and SEO structure (title tags, keywords, internal links) are kept, and any conflict with a style rule gets flagged in one line instead of resolved silently.
-- **Flatten your voice.** A writing sample from you outranks the skill's own style rules. If you use em dashes, you keep them.
+- **Flatten your voice.** A writing sample from you outranks the skill's own style rules. If you write one-line paragraphs, you keep them. The one exception is the em dash: it stays banned unless you explicitly ask for it back, because it is the single loudest AI tell regardless of who actually wrote it.
 
 ## FAQ
 
