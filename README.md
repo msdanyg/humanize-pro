@@ -50,6 +50,15 @@ Under all four sits an absolute no-fabrication rule: the skill never invents a s
 
 Updates ship as version bumps to this repo. To receive them automatically, open `/plugin`, go to the Marketplaces tab, and enable auto-update for `humanize-pro`. Without auto-update, run `/plugin marketplace update humanize-pro` whenever you want the latest.
 
+**Claude Code in an IDE** (VS Code, JetBrains): if `/plugin` reports it isn't available, run the CLI from a terminal instead. Same marketplace, same config, same update path.
+
+```
+claude plugin marketplace add msdanyg/humanize-pro
+claude plugin install humanize-pro@humanize-pro
+```
+
+Reload the editor window afterward so the skill loads. Updates: `claude plugin marketplace update humanize-pro`.
+
 **Upgrading from a manual copy** (pre-1.5.0 installs): delete the old copy first so two versions of the skill don't both load, then install via the marketplace above.
 
 ```
