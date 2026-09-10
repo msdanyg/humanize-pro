@@ -61,6 +61,19 @@ Also flag: significance inflation ("marking a turning point in the evolution of"
 | Paper-practice pivot | "On paper it scales. In practice, it doesn't." | State what actually happens, with the evidence. |
 | Concession pivot | "To be fair, the docs are thorough. But nobody reads them." | Keep only if the concession is real; otherwise cut the first half. |
 | Fragment kicker | "That's the whole game." as the closing line | End where the content ends. |
+| Full-sentence kicker | "The tool never decides which." as the closing line | Same tell with a subject and verb. End on the content. |
+| Two-sentence contrast | "These fights never get settled by a RACI. They get settled the first time a launch goes badly." | "Not X, it's Y" with a period in the middle. Say Y. |
+| Crux nomination | "Hiring people better than you is the one that decides whether year two works." | React to the item without ranking the author's list. See below. |
+| Dismiss-to-elevate | "The other three you can screen for in an afternoon. That last one nobody tests for." | Crux nomination plus a strawman. Keep the one claim you can back. |
+| Gnomic generalization | "These fights never get settled by a RACI." | Category subject, present tense, never or always. Own it as an instance ("a RACI never settled it on my team") or cut. |
+| Hypothetical anecdote | "the first time a launch goes badly and somebody finally says out loud who makes the call" | A vivid scene with "somebody" in it is an invented story. Use a real one from the user or state the claim plainly. |
+| Candor adverb | "where the work is actually going", "actually test for" | Delete "actually", "really", "genuinely", "truly", "finally" unless the text contradicts something. |
+| Fronted object | "Technical, creative, and broad you can screen for in an afternoon." | Normal word order. |
+| Article and subject drop | "Most useful artifact a PMM owns, and half the value is..." | Restore the subject. Clipped is not the same as terse. |
+| Idiomatic quantity | "year two", "half the value", "in an afternoon", "the last few years" | A real figure from the source, or a plain word. |
+| Menu question | "Summarize down to claims first, or keep them away from AI tooling entirely?" | One open question you want answered, or none. |
+| Approval stock | "sounds like the real deal", "the closing point lands for me too", "spot on" | Name the specific thing you agree with, or cut. |
+| Credential pivot | "I spent the last few years in workforce analytics, where the same dashboard gets used to..." | If the experience is real, follow it with a past-tense instance, not a generalization. |
 
 ### Credentialed honesty
 
@@ -69,6 +82,17 @@ Flagging a statement as the honest one implies the surrounding statements were n
 Forms: "the honest answer", "real talk", "I'll be blunt", "let me be candid", "not the polite version", "not the LinkedIn answer", "here's what nobody will tell you". Fix by deleting the frame and delivering the content. If the content is not actually candid, the frame was doing the work and the sentence has nothing in it.
 
 Watch for the stacked case. "Not the LinkedIn answer. The honest one." runs three tells in seven words: credentialed honesty, strawman negation (nobody offered a LinkedIn answer), and contrastive reframe in fragment form. Stacked tells like this are usually a whole passage to cut rather than a line to repair.
+
+### Moves, not strings
+
+Every row in the table is a rhetorical move, listed by its most common wording. A model that has learned the wording reproduces the move in a different grammar, and the result passes a literal scan while still reading as generated. Four short LinkedIn comments that survived a full humanize pass and still read as AI to the user, with what was left in them:
+
+- "Hiring people better than you is the one that decides whether year two works. Technical, creative, and broad you can screen for in an afternoon. That last one I've never seen an interview process actually test for." Crux nomination, dismiss-to-elevate, fronted objects, a candor adverb, an idiomatic quantity, and three sentences that are each a thesis.
+- "Win/loss transcripts are the hard case. Most useful artifact a PMM owns, and half the value is a named customer saying something unflattering about a named competitor. Curious how people are actually handling those. Summarize down to claims first, or keep them away from AI tooling entirely?" Crux nomination, article drop, idiomatic quantity, candor adverb, "curious how", menu question.
+- "These fights never get settled by a RACI. They get settled the first time a launch goes badly and somebody finally says out loud who makes the call next time." Two-sentence contrast, two gnomic generalizations, a hypothetical anecdote, nothing owned by the writer.
+- "Your mom sounds like the real deal. The closing point lands for me too. I spent the last few years in workforce analytics, where the same dashboard gets used to justify a cut or to find where the work is actually going. The tool never decides which." Approval stock twice, credential pivot into a generalization, candor adverb, full-sentence kicker. The shape is validate, agree, credential, aphorism.
+
+None of these contain a banned word, an em dash, or a triad that is not the real count. What they share is that every sentence is a claim about the world and none is a reaction to a person. The fix at the string level is in the table. The fix at the move level: for short text, allow one general claim, and make the rest reference the input, own an instance in the past tense, or ask.
 
 ### Titles and headings
 
@@ -183,3 +207,19 @@ These are worse than style tells because they survive editing.
 **Cold email**
 - Before: "I hope this email finds you well. I noticed you're the VP of Marketing at Acme and wanted to reach out because I believe our platform could help you unlock significant efficiencies. Would you be opposed to a quick 15 minutes?"
 - After: "Saw Acme is hiring two PMMs this quarter. We built the positioning tooling one of them would otherwise spend six weeks on. Worth a look, or is this already handled?"
+
+**Two-sentence contrast plus hypothetical anecdote** (LinkedIn comment)
+- Before: "These fights never get settled by a RACI. They get settled the first time a launch goes badly and somebody finally says out loud who makes the call next time."
+- After, when the writer has an instance: "A RACI never settled this for us. What did was the Q2 launch going sideways, after which we wrote down who calls it."
+- After, without one: "Has a RACI ever settled this for anyone? Every version I've been near got settled by a bad launch instead."
+- Note: the first after needs the Q2 launch from the user. The second is shorter and asks. Neither has a category subject in the gnomic present.
+
+**Validate, agree, credential, aphorism** (LinkedIn comment)
+- Before: "Your mom sounds like the real deal. The closing point lands for me too. I spent the last few years in workforce analytics, where the same dashboard gets used to justify a cut or to find where the work is actually going. The tool never decides which."
+- After: "Agree on the closing point. In workforce analytics I watched the same dashboard get opened to justify a cut one quarter and to find where the hours went the next. Which one it was depended on who opened it."
+- Note: the compliment and the kicker are gone, and the generalization became a first-person past-tense instance. The last sentence carries content instead of a beat.
+
+**Crux nomination plus menu question** (LinkedIn comment)
+- Before: "Win/loss transcripts are the hard case. Most useful artifact a PMM owns, and half the value is a named customer saying something unflattering about a named competitor. Curious how people are actually handling those. Summarize down to claims first, or keep them away from AI tooling entirely?"
+- After: "Where do win/loss transcripts land under this? They are full of named customers saying unflattering things about named competitors, which is the whole reason they are useful."
+- Note: one question, tied to the post, and the question comes first because it is the point.

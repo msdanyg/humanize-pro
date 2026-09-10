@@ -5,18 +5,19 @@ Read only the section that applies. Each section gives length, structure, openin
 ## Contents
 
 1. LinkedIn
-2. X / Twitter
-3. Cold email (external, outbound)
-4. Warm and reply email (external)
-5. Internal email
-6. Exec memo and board update
-7. Slack (internal)
-8. Slack Connect and external chat
-9. Blog and long-form web
-10. Landing page and product marketing copy
-11. Product docs and help content
-12. Press, analyst, and public statement
-13. The internal vs external axis
+2. LinkedIn comment and reply
+3. X / Twitter
+4. Cold email (external, outbound)
+5. Warm and reply email (external)
+6. Internal email
+7. Exec memo and board update
+8. Slack (internal)
+9. Slack Connect and external chat
+10. Blog and long-form web
+11. Landing page and product marketing copy
+12. Product docs and help content
+13. Press, analyst, and public statement
+14. The internal vs external axis
 
 ---
 
@@ -33,7 +34,7 @@ Read only the section that applies. Each section gives length, structure, openin
 - Hook line, then "Here's why:", then a numbered list, then "What do you think?"
 - "I've seen this a hundred times." "Let that sink in." "Read that again."
 - Fake vulnerability setups: "I was wrong about X for 10 years."
-- Engagement bait CTAs. End on the point or on a real question you actually want answered.
+- Engagement bait CTAs. End on the point or on a real question you want answered.
 - Hashtag stacks. Zero to three, at the end, or none.
 - Emoji bullet points.
 - The "unpopular opinion:" prefix on a popular opinion.
@@ -44,7 +45,42 @@ Read only the section that applies. Each section gives length, structure, openin
 
 ---
 
-## 2. X / Twitter
+## 2. LinkedIn comment and reply
+
+A comment is not a short post. Its job is to answer a person, and the most common failure is a polished mini-post left under someone else's post.
+
+**Length**: one to three sentences, under 60 words. Longer than the post is a tell.
+
+**The standalone test**: if the comment could be published on its own with nothing lost, it is a post, not a reply. A real comment needs the thread to make sense, because it refers to something in it.
+
+**Structure**: one move. Pick exactly one:
+
+- Agree with a specific line and add one owned instance, past tense, first person.
+- Disagree with a specific line and say why.
+- Ask the one question you want answered.
+
+Quote or paraphrase the line you are reacting to. Two moves is the ceiling; four (compliment, agree, credential, aphorism) is the template.
+
+**Opening rule**: start on the line you are reacting to, or on your own point. No compliment first.
+
+**Kill on sight**:
+- The mini-post: every sentence a general truth. One general claim at most; the rest refers to the post, owns an instance, or asks.
+- Crux nomination: "X is the one that decides", "X is the hard case", "half the value is". Ranking the author's list for them, then dismissing the rest to elevate one.
+- A kicker as the last line, fragment or full sentence. If the last line is the shortest and the most quotable, cut it or move the content into the sentence before it.
+- Approval stock: real deal, spot on, this lands, so much this, nailed it, well said, resonates, 100%.
+- "Curious how others are handling this" and every closing menu question ("A first, or B entirely?"). One open question, or none.
+- The credential pivot ("I spent N years in X, where...") followed by a generalization. Experience earns a past-tense instance, not an aphorism.
+- Gnomic present with never or always: "These fights never get settled by a RACI."
+- "Actually", "really", "genuinely" as candor flags.
+- "Great post", "Thanks for sharing", tagging people, hashtags, emoji.
+
+**What makes it read human**: a named instance in the past tense ("the Q2 launch", "at my last company"), an admitted gap ("we never solved this"), a question the commenter would want answered, disagreement.
+
+**X replies**: same rules, shorter, lowercase fine.
+
+---
+
+## 3. X / Twitter
 
 **Length**: under 280 for a single post. Threads only when the user asks for one.
 
@@ -56,7 +92,7 @@ Read only the section that applies. Each section gives length, structure, openin
 
 ---
 
-## 3. Cold email (external, outbound)
+## 4. Cold email (external, outbound)
 
 **Length**: under 90 words in the body. Under 60 is better.
 
@@ -67,7 +103,7 @@ Read only the section that applies. Each section gives length, structure, openin
 **Kill on sight**:
 - "I hope this email finds you well." "Hope you're having a great week."
 - "I'll cut to the chase" followed by not cutting to the chase.
-- "I noticed you're the {title} at {company}" with nothing that required actually looking.
+- "I noticed you're the {title} at {company}" with nothing that required looking.
 - Compliment sandwich openers.
 - Three-benefit bullet blocks.
 - "Would you be opposed to a quick 15 minutes?" and every other negative-consent trick.
@@ -80,7 +116,7 @@ Read only the section that applies. Each section gives length, structure, openin
 
 ---
 
-## 4. Warm and reply email (external)
+## 5. Warm and reply email (external)
 
 **Length**: match theirs, plus or minus a bit. Replying to two sentences with twelve is the tell.
 
@@ -92,7 +128,7 @@ Read only the section that applies. Each section gives length, structure, openin
 
 ---
 
-## 5. Internal email
+## 6. Internal email
 
 **Length**: under 150 words for most. If it needs more, it needs a doc with the email as a two-line summary and a link.
 
@@ -106,7 +142,7 @@ Read only the section that applies. Each section gives length, structure, openin
 
 ---
 
-## 6. Exec memo and board update
+## 7. Exec memo and board update
 
 **Length**: one page for a memo. Under 300 words for an update email.
 
@@ -120,7 +156,7 @@ Read only the section that applies. Each section gives length, structure, openin
 
 ---
 
-## 7. Slack (internal)
+## 8. Slack (internal)
 
 **Length**: match the question. A one-line question gets a one-line answer. This is the single most common failure in this channel.
 
@@ -141,13 +177,13 @@ Read only the section that applies. Each section gives length, structure, openin
 
 ---
 
-## 8. Slack Connect and external chat
+## 9. Slack Connect and external chat
 
 Same mechanics as internal Slack, one adjustment: no internal shorthand, no unexplained acronyms, no candor about internal problems. Slightly more complete sentences. Still no headers, still no sign-off.
 
 ---
 
-## 9. Blog and long-form web
+## 10. Blog and long-form web
 
 **Opening rule**: first sentence is a claim, a specific, or a scene. Never "In today's fast-paced digital landscape". Never a definition of the topic. Never a question you are about to answer.
 
@@ -161,7 +197,7 @@ Same mechanics as internal Slack, one adjustment: no internal shorthand, no unex
 
 ---
 
-## 10. Landing page and product marketing copy
+## 11. Landing page and product marketing copy
 
 **Headline**: a specific claim or outcome. Not "Unlock the power of X". Not "X, reimagined". Not an alliterative triad.
 
@@ -175,7 +211,7 @@ Same mechanics as internal Slack, one adjustment: no internal shorthand, no unex
 
 ---
 
-## 11. Product docs and help content
+## 12. Product docs and help content
 
 Voice is not wanted here. Skip the texture pass entirely.
 
@@ -185,7 +221,7 @@ Voice is not wanted here. Skip the texture pass entirely.
 
 ---
 
-## 12. Press, analyst, and public statement
+## 13. Press, analyst, and public statement
 
 Hedging is often substance here, not slop. Do not strip qualifiers that carry legal or factual weight.
 
@@ -197,7 +233,7 @@ Hedging is often substance here, not slop. Do not strip qualifiers that carry le
 
 ---
 
-## 13. The internal vs external axis
+## 14. The internal vs external axis
 
 Same content, different settings.
 

@@ -1,6 +1,6 @@
 {
   "name": "humanize-pro",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "Make AI-drafted text read like a person wrote it, for the channel it ships in. De-AI pass, channel fit, voice profiles, and a two-gate audit before delivery.",
   "author": {
     "name": "Daniel Glickman",

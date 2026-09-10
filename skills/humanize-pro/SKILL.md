@@ -5,15 +5,16 @@ description: >-
   tighten, or make text sound human or natural; when they say something reads
   like AI or like ChatGPT; when they ask whether something matches their voice
   or style guide; or when drafting or rewriting outbound human
-  communication: LinkedIn, X, cold or warm email, internal email, exec memo,
-  Slack, blog, landing page, help content, press or public statements. Applies
+  communication: LinkedIn posts and comments, X posts and replies, cold or
+  warm email, internal email, exec memo, Slack, blog, landing page, help
+  content, press or public statements. Applies
   to prose inside deliverables too: documents, decks, artifacts, and generated
   files, not only chat replies. Do not
   trigger for code, commit messages, PR descriptions, changelogs, legal or
   regulated text, or SEO structural elements (title tags, meta descriptions,
   keywords) unless the user explicitly asks to humanize those.
 metadata:
-  version: 1.5.0
+  version: 1.6.0
 ---
 
 # Humanize Pro
@@ -29,7 +30,7 @@ Use this skill when:
 - The user asks to humanize, unslop, de-slop, de-AI, clean up, or tighten text, or to make it sound human or natural.
 - The user says something reads like AI or like ChatGPT.
 - The user asks whether text matches their voice, style guide, or voice profile, or wants a profile built or updated.
-- You are drafting or rewriting outbound human communication, even if nobody said "humanize": LinkedIn, X, cold or warm email, internal email, exec memo, Slack, blog, landing page, help content, press or public statements.
+- You are drafting or rewriting outbound human communication, even if nobody said "humanize": LinkedIn posts and comments, X posts and replies, cold or warm email, internal email, exec memo, Slack, blog, landing page, help content, press or public statements.
 - Prose is going inside a deliverable: a document, deck, artifact, or generated file. The rules apply to the payload, not only the chat reply.
 
 Do not trigger for:
@@ -132,7 +133,7 @@ Two failure modes to watch. **Over-fitting**: one heavy edit becomes a permanent
 
 Before writing anything, fix these three:
 
-- **Channel**: LinkedIn, X, cold email, internal email, exec memo, Slack, blog, landing page, product docs, press or analyst, board.
+- **Channel**: LinkedIn post, LinkedIn comment or reply, X post, X reply, cold email, internal email, exec memo, Slack, blog, landing page, product docs, press or analyst, board. A comment is its own channel, not a short post: it answers a person.
 - **Direction**: internal or external. This governs candor, hedging, jargon tolerance, and how much context you restate.
 - **Relationship**: cold, warm, peer, report, manager, exec, customer, public.
 
@@ -148,7 +149,11 @@ With no sample, aim for competent-professional-with-a-pulse: plain words, varied
 
 ### 3. Universal pass
 
-The checklist below covers most short texts. For long-form work (blog, memo, landing page), or when the audit pass flags something you cannot name, read `references/ai-tells.md` in full. In priority order:
+The checklist below covers most short texts. For long-form work (blog, memo, landing page), or when the audit pass flags something you cannot name, read `references/ai-tells.md` in full.
+
+Every tell below is a rhetorical move, listed by its most common wording so it can be scanned for. Rewording the move is not a fix. "It's not X, it's Y" spread across two sentences is still the contrast move; a five-word closing sentence is still the kicker. When you catch a string, ask what the sentence is doing, and remove the move.
+
+In priority order:
 
 1. **Cut the opener.** Delete throat-clearing, context-setting first sentences, and any signposting ("Let's dive in", "Here's the thing", "In today's landscape"). Start with the claim.
 2. **Cut the closer.** Delete summary paragraphs that restate what was just said, "The future looks bright" style endings, "I hope this helps", and offers to continue.
@@ -163,6 +168,9 @@ The checklist below covers most short texts. For long-form work (blog, memo, lan
 11. **Make titles name their payload.** No "The X, and the Y sitting inside it". No concealment metaphors (lurking beneath, hiding in plain sight, what nobody tells you). No "Topic: a deeper look". State the claim. Sentence case.
 12. **Cut hedge stacks.** "may potentially help" becomes "may help". Keep a hedge only when the claim actually is uncertain.
 13. **Name the source or cut the claim.** No "experts say", "studies show", "many companies find".
+14. **Kill the moves that survive string bans.** Contrast-then-mirror in any grammar: "never gets settled by a RACI. It gets settled the first time...". Crux nomination: crowning one item as "the one that decides", "the hard case", "where half the value is", usually followed by dismissing the rest. The kicker in any form: if the last sentence is the shortest and the most quotable, it is a kicker, fragment or not. Gnomic generalization: a category subject in the present tense with never or always ("The tool never decides which", "These fights never get settled"). One gnomic sentence per short text at most, and it is the first sentence to cut.
+15. **Cut candor adverbs.** "actually", "really", "genuinely", "truly", "finally" when nothing in the text contradicts them. Delete the word; if the sentence means the same, it was a candor flag, the residue of announced honesty after the frame was removed.
+16. **Restore normal word order.** No fronted objects for punch ("Technical, creative, and broad you can screen for in an afternoon", "That last one I've never seen"). No dropped subjects and articles to sound clipped ("Most useful artifact a PMM owns, and..."). Performed terseness reads as performance.
 
 ### 4. Add texture
 
@@ -172,6 +180,8 @@ Removing tells produces text that is clean and dead. A human wrote this, so some
 - An opinion where an opinion is appropriate, including the unflattering one.
 - Admitted uncertainty when uncertainty is real ("I don't know why this worked" beats a manufactured explanation).
 - Varied sentence length. Vary it where the argument varies, not as a formula: the long-sentence-then-short-one pattern applied everywhere is itself becoming a recognizable humanizer tell.
+
+**When the source has no specific, go smaller, not bigger.** The failure mode is compensating for a missing number or story with a universal claim or a typical scene: "the first time a launch goes badly and somebody finally says out loud who makes the call". A vivid hypothetical with "somebody" as its protagonist is a fabricated anecdote with the names removed, and it reads as one. Number-shaped idioms ("year two", "half the value", "in an afternoon") are the same dodge. With no specific to hand: refer to the input, ask a real question, or say less. If the writer has a real instance, put it in the past tense and first person; a generalization owned as "I watched X happen at Y" is texture, the same claim in the gnomic present is a fortune cookie.
 
 **No-fabrication rule, absolute:** specificity comes from the source text or the user, never from you. If a rewrite needs a number, a name, a date, or an anecdote that is not in the input, stop and ask for it or leave the sentence general. Never invent a statistic, a quote, a customer, or a personal experience. This rule outranks every instruction above.
 
@@ -187,7 +197,7 @@ Two gates, in order. The first is mechanical and has no judgment in it.
 
 - Each standing constraint from the voice profile.
 - Any em dash character, in any use. (En dashes in numeric ranges pass.)
-- Banned vocabulary from step 3.
+- Banned vocabulary from step 3, and the candor adverbs from step 3 item 15.
 - The constructions from step 5, and redundant negation from step 6.
 - Bullets over roughly fifteen words. Announced honesty. Titles that promise instead of name.
 - Triads: three bullets, three clauses, three examples in a row.
@@ -195,6 +205,13 @@ Two gates, in order. The first is mechanical and has no judgment in it.
 Failing Gate A is not a matter of degree. Fix and rescan.
 
 **Gate B, read it cold.** Answer: would a reader assume a model wrote this? Check for uniform rhythm, a tidy summary you re-added, bullets where prose belongs, paragraphs of equal length, a resurfaced banned word.
+
+Those checks only fire on paragraphs. For anything under about 80 words (a comment, a reply, a Slack line, a short email), run these instead:
+
+- **Quote-card test.** Is the last sentence the shortest and the most quotable? Then it is a kicker. End on the content instead.
+- **Standalone test.** For a comment or reply: could it be posted on its own with nothing lost? Then it is a post, not a reply. It should need the thread to make sense.
+- **Thesis count.** How many sentences are general claims with a category subject? More than one means the text is dispensing wisdom, not talking. Convert one to an owned instance, a reference to the input, or a question, and cut the rest.
+- **Move scan.** Crux nomination in the first sentence, contrast-then-mirror anywhere, a credential pivot into a generalization, a closing menu question.
 
 If yes on any, rewrite once. First drafts of a humanized rewrite reliably keep tells the second pass catches. Both gates happen silently: catch a tell, fix it, show only the fixed text. No trace of the correction appears in the deliverable.
 
